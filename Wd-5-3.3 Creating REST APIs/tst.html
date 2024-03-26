@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+    var outputText = "";
+    outputText += "Going to kitchen\n\n";
+    outputText += "Put water to the kettle\n";
+    outputText += "Plug the kettle\n";
+    outputText += "Water boils for 5mins. I'm waiting till it's boiled.\n";
+    outputText += "Water is boiled. Now I put sugar and tea leaves to a cup\n";
+    outputText += "Pour water into the cup and stir\n";
+
+  document.getElementById("demo").innerHTML = outputText;
+}
+</script>
+
+</body>
+</html>
+

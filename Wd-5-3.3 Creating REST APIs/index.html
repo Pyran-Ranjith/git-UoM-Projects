@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html
+>
+<head>
+    <title>
+        jQuery AJAX
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body style="text-align:center;">
+
+    <h2>
+        jQuery GET and POST Methods
+    </h2>
+
+    <button id="get">GET</button>
+    <br />
+    <div id="get-response"></div>
+
+    <br />
+
+    <button id="post">POST</button>
+    <br />
+    <div id="post-response"></div>
+
+
+</body>
+
+<script>
+        $(document).ready(function () {
+            $("#get").click(function () {
+                $.get({
+                    url: "https://61631622c483380017300818.mockapi.io/v1/users/1",
+                    success: function (result) {
+                        $("#get-response").append(JSON.stringify(result));
+                    }
+                });
+            });
+        });
+</script>
+
+</html>
